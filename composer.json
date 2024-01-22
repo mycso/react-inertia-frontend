@@ -11,6 +11,7 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
+        "laravel/vapor-core": "^2.36",
         "tightenco/ziggy": "^1.0"
     },
     "require-dev": {
@@ -63,7 +64,9 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
-        }
+        },
+        "COMPOSER_MIRROR_PATH_REPOS": true,
+        "LARAVEL_BYPASS_ENV_CHECK": "1"
     },
     "minimum-stability": "stable",
     "prefer-stable": true
