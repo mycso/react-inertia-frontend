@@ -3,8 +3,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "tsc && vite build --watch",
-        "start": "concurrently  \"php artisan config:cache\" \"php artisan serve\" \"npm run dev \"  "
+        "build": "tsc && vite build",
+        "start": "concurrently  \"php artisan config:cache\" \"php artisan serve\" \"npm run dev \" && tsc && vite build --watch"
     },
     "devDependencies": {
         "@headlessui/react": "^1.4.2",
@@ -16,6 +16,7 @@
         "@vitejs/plugin-react": "^4.2.0",
         "autoprefixer": "^10.4.12",
         "axios": "^1.6.4",
+        "laravel-vapor": "^0.7.0",
         "laravel-vite-plugin": "^1.0.0",
         "postcss": "^8.4.31",
         "react": "^18.2.0",
@@ -25,6 +26,8 @@
         "vite": "^5.0.0"
     },
     "dependencies": {
+        "puppeteer": "^21.9.0",
+        "rimraf": "^5.0.5",
         "watch": "^1.0.2"
     }
 }
